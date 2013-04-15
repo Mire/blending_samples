@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<style>
+
+div.test
+{
+	margin: 5px;
+	width: 200px;
+	height: 200px;
+	background:  url("resources/ducky.png") no-repeat 0 0 /100% 100%, linear-gradient(to right, #00ffff 0%, rgba(0,0,255,0) 24%, rgba(1,0,0,0) 50%, #ffff00 75%, #00ff00 100%);
+	-webkit-background-blend-mode: multiply, normal;
+	background-blend-mode: multiply, normal;
+	background-size: contain;
+	float: left;
+	overflow: auto;
+}
+
+div {
+	display: block;
+}
+
+img{ 
+    position: relative; 
+    left: 10px;
+    margin: 5px;
+	width: 200px;
+	height: 200px;
+}
+</style>
+<!-- this file should contain a duck on top of a gradient with every type of blending -->
+<body style="background-color:red">
+<h4>Blending for background-attachment </h4>
+<div></div>
+<table >
+	<tr>
+	    <td>
+	    	<h4> </h4>
+		</td>
+	    <td>
+	    	<h4>background-blend-mode</h4>
+		</td>
+		<td>
+	    	<h4>Safari screenshot</h4>
+		</td>
+		<td>
+	    	<h4>Chromium screenshot</h4>		
+		</td>
+		<td>
+	    	<h4>Firefox screenshot</h4>		
+		</td>
+    </tr>
+	<tr>
+	    <td>
+	    	<div> background-attachment:fixed 	    	
+	    	</div>
+		</td>
+        <td>
+			<div class="test" style="background-attachment:fixed">
+			</div>
+		</td>
+		<td>
+			<img src="screenshot/Safari/background-attachment/effect-background-attachment-blend-mode-fixed.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Chromium/background-attachment/effect-background-attachment-blend-mode-fixed.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Firefox/background-attachment/effect-background-attachment-blend-mode-fixed.png"></img>
+		</td>
+    </tr>
+	<tr>
+	    <td>
+	    	<div> background-attachment:scroll 	    	
+	    	</div>
+		</td>
+        <td>
+			<div class="test" style="background-attachment:scroll">
+			</div>
+		</td>
+		<td>
+			<img src="screenshot/Safari/background-attachment/effect-background-attachment-blend-mode-scroll.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Chromium/background-attachment/effect-background-attachment-blend-mode-scroll.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Firefox/background-attachment/effect-background-attachment-blend-mode-scroll.png"></img>
+		</td>
+    </tr>
+	<tr>
+	    <td>
+	    	<div> background-attachment:local 	    	
+	    	</div>
+		</td>
+        <td>
+			<div class="test" style="background-attachment:local">
+			</div>
+		</td>
+		<td>
+			<img src="screenshot/Safari/background-attachment/effect-background-attachment-blend-mode-local.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Chromium/background-attachment/effect-background-attachment-blend-mode-local.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Firefox/background-attachment/effect-background-attachment-blend-mode-local.png"></img>
+		</td>
+    </tr>
+<table>
+</body>
