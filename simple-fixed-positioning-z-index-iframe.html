@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<style>
+table{
+    position:relative;
+
+    display: block;
+}
+
+#fixed{
+    margin: 5px;
+	width: 200px;
+	height: 200px;
+	background:  url("resources/ducky.png") no-repeat 0 0 /100% 100%, linear-gradient(to right, #00ffff 0%, rgba(0,0,255,0) 24%, rgba(1,0,0,0) 50%, #ffff00 75%, #00ff00 100%);
+	-webkit-background-blend-mode: multiply, normal;
+	background-blend-mode: multiply, normal;
+	display: block;
+	float: right;
+    position: fixed;
+}
+
+img{ 
+    position: relative; 
+    left: 10px;
+    margin: 5px;
+	width: 200px;
+	height: 200px;
+}
+
+iframe{ 
+    position: relative;
+    margin: 5px;
+	width: 200px;
+	height: 200px;
+	border-style: none;
+}
+
+</style>
+<body style="background-color: red;">
+<table >
+	<tr>
+	    <td>
+	    	<h4> </h4>
+		</td>
+	    <td>
+	    	<h4>background-blend-mode</h4>
+		</td>
+		<td>
+	    	<h4>Safari screenshot</h4>
+		</td>
+		<td>
+	    	<h4>Chromium screenshot</h4>		
+		</td>
+		<td>
+	    	<h4>Firefox screenshot</h4>		
+		</td>
+    </tr>
+	<tr>
+	    <td>
+	    	<div> 
+	    		<p> position: fixed </p>
+	    		<p> z-index: 100 </p>
+	        </div>
+		</td>
+    	<td>
+			<div>
+				<p> See the "fixed" duck </p>
+				<p>	on the right side </p>
+			</div>
+		</td>
+		<td>
+			<img src="screenshot/Safari/effect-background-blend-mode-fixed-positioning-z-index.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Chromium/effect-background-blend-mode-fixed-positioning-z-index.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Firefox/effect-background-blend-mode-fixed-positioning-z-index.png"></img>
+		</td>
+    	<td>
+			<div id="fixed" style="z-index:100"></div>
+		</td>
+    </tr>
+	<tr>
+	    <td>
+	    	<div>iframe</div>
+		</td>
+	    <td>
+			<iframe src="src/simple-fixed-positioning-z-index.html">
+			</iframe>
+		</td>
+		<td>
+			<img src="screenshot/Safari/simple-fixed-positioning-z-index-iframe.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Chromium/simple-fixed-positioning-z-index-iframe.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Firefox/simple-fixed-positioning-z-index-iframe.png"></img>
+		</td>
+    </tr>
+</table>
+</body>
+
