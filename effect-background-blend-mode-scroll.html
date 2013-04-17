@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<style>
+
+table{
+    position:relative;
+
+    display: block;
+}
+
+td{
+	height: 100;
+	width: 100;
+}
+img{ 
+    position: relative; 
+    left: 10px;
+    margin: 5px;
+	width: 200px;
+	height: 200px;
+}
+#overflow
+{
+	margin: 5px;
+	width: 400px;
+	height: 400px;
+	background:  url("resources/ducky.png") repeat 0 0 /100% 100%, linear-gradient(to right, #00ffff 0%, rgba(0,0,255,0) 24%, rgba(1,0,0,0) 50%, #ffff00 75%, #00ff00 100%);
+	-webkit-background-blend-mode: multiply, normal;
+	background-blend-mode: multiply, normal;
+	display: block;
+	float: left;
+}
+
+</style>
+<body style="background-color: red;">
+<table>
+	<tr>
+	    <td>
+	    	<h4> </h4>
+		</td>
+	    <td>
+	    	<h4>background-blend-mode</h4>
+		</td>
+		<td>
+	    	<h4>Safari screenshot</h4>
+		</td>
+		<td>
+	    	<h4>Chromium screenshot</h4>		
+		</td>
+		<td>
+	    	<h4>
+	    		<p>Firefox screenshot</p>
+	    		<p> before scroll and after 5 seconds</p>
+	    	</h4>		
+		</td>
+		<td>
+	    	<h4>Firefox screenshot after scroll</h4>		
+		</td>
+    </tr>
+	<tr>
+	    <td>
+	    	<p> Scrollable element </p>
+	    	<p> with background-blending</p>
+		</td>
+	    <td>
+	    	<div style="width: 200px; height: 200px; overflow: scroll;">
+			<div id="overflow">
+			</div>
+			</div>
+		</td>
+		<td>
+			<img src="screenshot/Safari/effect-background-blend-mode-scroll.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Chromium/effect-background-blend-mode-scroll.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Firefox/effect-background-blend-mode-scroll.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Firefox/5_Seconds_Scroll_BehaviorFirefox.png"></img>
+		</td>
+    </tr>
+<table>
+</body>
