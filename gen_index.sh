@@ -6,6 +6,10 @@ echo "<head>" >> index.html
 echo "<title>CSS blending test cases</title>" >> index.html
 echo "</head>" >> index.html
 echo "<body>" >> index.html
+echo "<h4>Test matrix to determine where the rendering behavior is different between browsers</h4>" >> index.html
+echo "<p>Each square contains 2 background images: a partially transparent gradient and a duck that has a blend mode attached to it.</p>" >> index.html
+echo "<p> Each test page consists of a table. Each row tests a different css property.</p>" >> index.html
+echo "<p> The first column shows your current browser's behavior. The other columns point to chrome, safari and firefox.</p> " >> index.html
 echo "<ul id='test-list' style='width:100%;float:left'>" >> index.html
 for file in `ls *.html`
 do
