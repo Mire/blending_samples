@@ -7,6 +7,10 @@ table{
     display: block;
 }
 
+.background {
+	background-color:red
+}
+
 #absolutely_positioned
 {
 	margin: 5px;
@@ -73,8 +77,8 @@ iframe{
 }
 
 </style>
-<body style="background-color: red;">
-<table >
+<body>
+<table>
 	<tr>
 	    <td>
 	    	<h4> </h4>
@@ -96,7 +100,7 @@ iframe{
 	    <td>
 	    	<div>position default</div>
 		</td>
-	    <td>
+	    <td class="background">
 			<div id="default"></div>
 		</td>
 		<td>
@@ -113,7 +117,7 @@ iframe{
 	    <td>
 	    	<div> position: absolute </div>
 		</td>
-    	<td>
+    	<td class="background">
 			<div id="absolutely_positioned"></div>
 		</td>
 		<td>
@@ -130,7 +134,7 @@ iframe{
 	    <td>
 	    	<div> position: fixed </div>
 		</td>
-        <td>
+        <td class="background">
 			<iframe src="src/simple-fixed-positioning.html" ></iframe>
 		</td>
 		<td>
@@ -147,7 +151,7 @@ iframe{
 	    <td>
 	    	<div> position: relative </div>
 		</td>
-        <td>
+        <td class="background">
 			<div id="relative"></div>
 		</td>
 		<td>

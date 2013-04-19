@@ -14,6 +14,10 @@ div.test
 	overflow: auto;
 }
 
+.background {
+	background-color:red
+}
+
 div {
 	display: block;
 }
@@ -27,7 +31,7 @@ img{
 }
 </style>
 <!-- this file should contain a duck on top of a gradient with every type of blending -->
-<body style="background-color:red">
+<body>
 <h4>Blending for background-attachment </h4>
 <div></div>
 <table >
@@ -53,7 +57,7 @@ img{
 	    	<div> background-attachment:fixed 	    	
 	    	</div>
 		</td>
-        <td>
+        <td class="background">
 			<div class="test" style="background-attachment:fixed">
 			</div>
 		</td>
@@ -72,7 +76,7 @@ img{
 	    	<div> background-attachment:scroll 	    	
 	    	</div>
 		</td>
-        <td>
+        <td class="background">
 			<div class="test" style="background-attachment:scroll">
 			</div>
 		</td>
@@ -91,7 +95,7 @@ img{
 	    	<div> background-attachment:local 	    	
 	    	</div>
 		</td>
-        <td>
+        <td class="background">
 			<div class="test" style="background-attachment:local">
 			</div>
 		</td>

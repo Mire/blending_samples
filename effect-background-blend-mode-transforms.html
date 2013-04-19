@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<style>
+
+table{
+    position:relative;
+
+    display: block;
+}
+
+.test
+{
+	background-color: red;
+}
+
+div{
+	margin: 5px;
+	width: 200px;
+	height: 200px;
+	background:  url("resources/ducky.png") no-repeat 0 0 /100% 100%, linear-gradient(to right, #00ffff 0%, rgba(0,0,255,0) 24%, rgba(1,0,0,0) 50%, #ffff00 75%, #00ff00 100%);
+	-webkit-background-blend-mode: multiply, normal;
+	background-blend-mode: multiply, normal;
+	display: block;	
+}
+
+#scale{
+	-webkit-transform: scale(1.01, 1.01);
+	-moz-transform: scale(1.01, 1.01);
+}
+
+#translate
+{
+	-webkit-transform: translate3d(.01px,.01px, 01px);
+	-moz-transform: translate3d(.01px,.01px, 01px);
+}
+
+img{ 
+    position: relative; 
+    left: 10px;
+    margin: 5px;
+	width: 200px;
+	height: 200px;
+}
+
+</style>
+<body >
+<table >
+	<tr>
+	    <td>
+	    	<h4> </h4>
+		</td>
+	    <td>
+	    	<h4>background-blend-mode</h4>
+		</td>
+		<td>
+	    	<h4>Safari screenshot</h4>
+		</td>
+		<td>
+	    	<h4>Chromium screenshot</h4>		
+		</td>
+		<td>
+	    	<h4>Firefox screenshot</h4>		
+		</td>
+    </tr>
+	<tr>
+	    <td>
+	    	<p> transform: scale(1.01, 1.01)</p>
+		</td>
+	    <td class="test">
+			<div id="scale" style=""></div>
+		</td>
+		<td>
+			<img src="screenshot/Safari/effect-background-blend-mode-transforms-scale.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Chromium/effect-background-blend-mode-transforms-scale.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Firefox/effect-background-blend-mode-transforms-scale.png"></img>
+		</td>
+    </tr>
+	<tr>
+	    <td>
+	    	<p> transform: translate3d(.01px,.01px, 01px) </p>
+		</td>
+    	<td class="test">
+			<div id="translate" style=""></div>
+		</td>
+		<td>
+			<img src="screenshot/Safari/effect-background-blend-mode-transforms-translate-3d.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Chromium/effect-background-blend-mode-transforms-translate-3d.png"></img>
+		</td>
+		<td>
+			<img src="screenshot/Firefox/effect-background-blend-mode-transforms-translate-3d.png"></img>
+		</td>
+    </tr>
+<table>
+</body>
