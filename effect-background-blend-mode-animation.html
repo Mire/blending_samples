@@ -17,9 +17,14 @@ table{
 	-webkit-background-blend-mode: multiply, normal;
 	background-blend-mode: multiply, normal;
 	position:relative;
-	animation:myfirst 5s;
-	-webkit-animation:myfirst 5s; /* Safari and Chrome */
+	animation: myfirst 5s;
+	-webkit-animation: myfirst 5s; /* Safari and Chrome */
 
+}
+
+.myanimation:hover {
+	animation: myfirst 5s;
+	-webkit-animation: myfirst 5s; /* Safari and Chrome */
 }
 
 @keyframes myfirst
@@ -39,6 +44,7 @@ table{
 75%  { left:0px; top:200px;}
 100% { left:0px; top:0px;}
 }
+
 </style>
 </head>
 <body style="background:red">
