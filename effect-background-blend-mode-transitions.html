@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<style>
+
+table{
+    position:relative;
+
+    display: block;
+}
+
+.test
+{
+	background-color: red;
+}
+
+div{
+	margin: 5px;
+	width: 200px;
+	height: 200px;
+	background:  url("resources/ducky.png") no-repeat 0 0 /100% 100%, linear-gradient(to right, #00ffff 0%, rgba(0,0,255,0) 24%, rgba(1,0,0,0) 50%, #ffff00 75%, #00ff00 100%);
+	-webkit-background-blend-mode: multiply, normal;
+	background-blend-mode: multiply, normal;
+	display: block;	
+}
+
+#mytransition
+{
+	-webkit-transition: -webkit-transform 3s ease-in;
+	-moz-transition: -moz-transform 3s ease-in;
+}
+
+
+#mytransition:hover
+{
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+
+}
+img{ 
+    position: relative; 
+    left: 10px;
+    margin: 5px;
+	width: 200px;
+	height: 200px;
+}
+
+</style>
+<body >
+<table >
+	<tr>
+	    <td>	
+	    	<h4> </h4>
+		</td>
+	    <td>
+	    	<h4>background-blend-mode</h4>
+		</td>
+		<td>
+	    	<h4>Safari screenshot</h4>
+		</td>
+		<td>
+	    	<h4>Chromium screenshot</h4>		
+		</td>
+		<td>
+	    	<h4>Firefox screenshot</h4>		
+		</td>
+    </tr>
+	<tr>
+	    <td>
+	    	<p> transition on hover</p>
+		</td>
+	    <td class="test">
+			<div id="mytransition"></div>
+		</td>
+		<td> 
+			<video width="400" height="400" controls>
+			  <source src="screenshot/Safari/effect-background-blend-mode-transitions/effect-background-blend-mode-transitions.webm" type="video/webm">
+			 	<source src="screenshot/Safari/effect-background-blend-mode-transitions/effect-background-blend-mode-transitions.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+		</td>
+		<td>
+			<video width="400" height="400" controls>
+			  <source src="screenshot/Chromium/effect-background-blend-mode-transitions/effect-background-blend-mode-transitions.webm" type="video/webm">
+			 	<source src="screenshot/Chromium/effect-background-blend-mode-transitions/effect-background-blend-mode-transitions.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+		</td>
+		<td>
+			<video width="400" height="400" controls>
+			  <source src="screenshot/Firefox/effect-background-blend-mode-transitions/effect-background-blend-mode-transitions.webm" type="video/webm">
+			 	<source src="screenshot/Firefox/effect-background-blend-mode-transitions/effect-background-blend-mode-transitions.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+		</td>
+    </tr>
+<table>
+</body>

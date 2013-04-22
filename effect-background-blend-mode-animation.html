@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+
+div{
+	margin: 5px;
+	width: 200px;
+	height: 200px;
+	background:  url("resources/ducky.png") no-repeat 0 0 /100% 100%, linear-gradient(to right, #00ffff 0%, rgba(0,0,255,0) 24%, rgba(1,0,0,0) 50%, #ffff00 75%, #00ff00 100%);
+	-webkit-background-blend-mode: multiply, normal;
+	background-blend-mode: multiply, normal;
+	position:relative;
+	animation:myfirst 5s;
+	-webkit-animation:myfirst 5s; /* Safari and Chrome */
+
+}
+
+@keyframes myfirst
+{
+0%   { left:0px; top:0px;}
+25%  { left:200px; top:0px;}
+50%  { left:200px; top:200px;}
+75%  { left:0px; top:200px;}
+100% { left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   { left:0px; top:0px;}
+25%  { left:200px; top:0px;}
+50%  { left:200px; top:200px;}
+75%  { left:0px; top:200px;}
+100% { left:0px; top:0px;}
+}
+</style>
+</head>
+<body style="background:green">
+<div class="mytransition">
+</div>
+</body> 
