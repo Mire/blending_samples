@@ -17,14 +17,13 @@ table{
 	-webkit-background-blend-mode: multiply, normal;
 	background-blend-mode: multiply, normal;
 	position:relative;
-	animation: myfirst 5s;
-	-webkit-animation: myfirst 5s; /* Safari and Chrome */
-
+	animation: myfirst 5s linear 1;
+	-webkit-animation: myfirst 5s linear 1; /* Safari and Chrome */
 }
 
 .myanimation:hover {
-	animation: myfirst 5s;
-	-webkit-animation: myfirst 5s; /* Safari and Chrome */
+	 animation-play-state: running;
+	 -webkit-animation-play-state: running;
 }
 
 @keyframes myfirst
