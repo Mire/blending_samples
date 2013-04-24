@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+table{
+    position:relative;
+	display: block;
+	top: 250px;
+}
+
+.myanimation{
+	margin: 5px;
+	width: 200px;
+	height: 200px;
+	background:  url("resources/ducky.png") no-repeat 0 0 /100% 100%, linear-gradient(to right, #00ffff 0%, rgba(0,0,255,0) 24%, rgba(1,0,0,0) 50%, #ffff00 75%, #00ff00 100%);
+	-webkit-background-blend-mode: multiply, normal;
+	background-blend-mode: multiply, normal;
+	position:relative;
+	animation: myfirst 5s linear 1;
+	-webkit-animation: myfirst 5s linear 1; /* Safari and Chrome */
+	-moz-animation: myfirst 5s linear 1; /* Safari and Chrome */
+}
+
+.myanimation:hover {
+	animation-play-state: running;
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+}
+
+@keyframes myfirst
+{
+0%   { -webkit-transform: rotate(90deg); left:0px; top:0px; }
+25%  { -webkit-transform: rotate(180deg); left:200px; top:0px; }
+50%  { -webkit-transform: rotate(360deg); left:200px; top:200px; }
+75%  { -webkit-transform: rotate(90deg); left:0px; top:200px; }
+100% { -webkit-transform: rotate(180deg); left:0px; top:0px; }
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   { -webkit-transform: rotate(90deg); left:0px; top:0px; }
+25%  { -webkit-transform: rotate(180deg); left:200px; top:0px; }
+50%  { -webkit-transform: rotate(360deg); left:200px; top:200px; }
+75%  { -webkit-transform: rotate(90deg); left:0px; top:200px; }
+100% { -webkit-transform: rotate(180deg); left:0px; top:0px; }
+}
+
+@-moz-keyframes myfirst /* Safari and Chrome */
+{
+0%   { -moz-transform: rotate(90deg); left:0px; top:0px; }
+25%  { -moz-transform: rotate(180deg); left:200px; top:0px; }
+50%  { -moz-transform: rotate(360deg); left:200px; top:200px; }
+75%  { -moz-transform: rotate(90deg); left:0px; top:200px; }
+100% { -moz-transform: rotate(180deg); left:0px; top:0px; }
+}
+
+</style>
+</head>
+<body style="background: green">
+<div class="myanimation" title="Animated webkit transform">
+</div>
+<table>
+	<tr>
+		<td>
+	    	<h4>Safari screencast</h4>
+		</td>
+		<td>
+	    	<h4>Chromium screencast</h4>		
+		</td>
+		<td>
+	    	<h4>Firefox screencast</h4>		
+		</td>
+    </tr>
+	<tr>
+		<td>
+			<video width="400" height="400" controls>
+			  <source src="screenshot/Safari/effect-background-blend-mode-transform-animation/effect-background-blend-mode-transform-animation.webm" type="video/webm">
+			 	<source src="screenshot/Safari/effect-background-blend-mode-transform-animation/effect-background-blend-mode-transform-animation.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+		</td>
+		<td>
+			<video width="400" height="400" controls>
+			  <source src="screenshot/Chromium/effect-background-blend-mode-transform-animation/effect-background-blend-mode-transform-animation.webm" type="video/webm">
+			 	<source src="screenshot/Chromium/effect-background-blend-mode-transform-animation/effect-background-blend-mode-transform-animation.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+		</td>
+		<td>
+			<video width="400" height="400" controls>
+			  <source src="screenshot/Firefox/effect-background-blend-mode-transform-animation/effect-background-blend-mode-transform-animation.webm" type="video/webm">
+			 	<source src="screenshot/Firefox/effect-background-blend-mode-transform-animation/effect-background-blend-mode-transform-animation.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+		</td>
+    </tr>
+</table>
+</body> 
